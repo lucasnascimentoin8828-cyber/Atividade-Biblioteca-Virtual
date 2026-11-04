@@ -7,7 +7,7 @@ pesquisa.addEventListener("input", function() {
 
     livros.forEach(function(livro) {
 
-        const titulo = livro.textContent.toLocaleLowerCase();
+        const titulo = livro.querySelector("h3").textContent.toLocaleLowerCase();
 
         if (titulo.includes(texto)) {
             livro.hidden = false;
@@ -29,10 +29,15 @@ formulario.addEventListener("submit", function(event) {
     event.preventDefault();
 
     if (titulo.value.trim().length < 3) {
-        mensagem.textContent = "Digite um título com pelo menos 3 caracteres.";
+
+        mensagem.textContent = "O título precisa ter pelo menos 3 caracteres.";
+
     } else {
-        mensagem.textContent = "Sugestão enviada com sucesso!";
+
+        mensagem.textContent = "Sua indicação foi enviada com sucesso!";
+
         formulario.reset();
+
     }
 
 });
