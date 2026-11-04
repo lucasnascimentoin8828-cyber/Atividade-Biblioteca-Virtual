@@ -3,80 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca Virtual</title>
+    <title>AFTERDARK - Arquivo Literário</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
 <body>
 
     <header>
-        <h1>Biblioteca Virtual</h1>
+        <h1>AFTERDARK<span>.</span></h1>
+        <p>UM ARQUIVO PARA MENTES INQUIETAS</p>
 
         <nav>
+            <a href="#inicio">Início</a>
             <a href="#catalogo">Catálogo</a>
-            <a href="#sugestoes">Sugerir Livro</a>
+            <a href="#sugestoes">Indicações</a>
         </nav>
     </header>
 
     <main>
 
-        <section id="catalogo">
-            <h2>Catálogo de Livros</h2>
+        <section id="inicio" class="apresentacao">
+            <p class="destaque">ARQUIVO Nº 001 / LITERATURA</p>
 
-            <label for="pesquisa">Pesquisar livro:</label>
-            <input type="search" id="pesquisa" placeholder="Digite o título...">
+            <h2>Algumas histórias nunca deixam de ecoar.</h2>
+
+            <p>
+                Um espaço dedicado a livros, ideias e histórias
+                que permanecem na cabeça mesmo depois da última página.
+            </p>
+        </section>
+
+        <section id="catalogo">
+
+            <p class="destaque">01 — COLEÇÃO</p>
+            <h2>Nosso Arquivo</h2>
+
+            <label for="pesquisa">Pesquisar no catálogo:</label>
+
+            <input
+                type="search"
+                id="pesquisa"
+                placeholder="Digite o nome de um livro..."
+            >
 
             <div class="livros">
 
                 <article class="livro">
-                    <h3>Dom Casmurro</h3>
-                </article>
-
-                <article class="livro">
-                    <h3>O Pequeno Príncipe</h3>
-                </article>
-
-                <article class="livro">
+                    <span>FICÇÃO / DISTOPIA</span>
                     <h3>1984</h3>
+                    <p>George Orwell</p>
                 </article>
 
                 <article class="livro">
-                    <h3>Harry Potter</h3>
+                    <span>FICÇÃO / SUSPENSE</span>
+                    <h3>Coraline</h3>
+                    <p>Neil Gaiman</p>
                 </article>
 
                 <article class="livro">
-                    <h3>O Hobbit</h3>
+                    <span>FICÇÃO / DISTOPIA</span>
+                    <h3>Fahrenheit 451</h3>
+                    <p>Ray Bradbury</p>
                 </article>
 
                 <article class="livro">
-                    <h3>Senhor dos Anéis</h3>
+                    <span>TERROR / CLÁSSICO</span>
+                    <h3>Frankenstein</h3>
+                    <p>Mary Shelley</p>
+                </article>
+
+                <article class="livro">
+                    <span>FILOSOFIA / FICÇÃO</span>
+                    <h3>O Estrangeiro</h3>
+                    <p>Albert Camus</p>
+                </article>
+
+                <article class="livro">
+                    <span>TERROR / CLÁSSICO</span>
+                    <h3>Drácula</h3>
+                    <p>Bram Stoker</p>
                 </article>
 
             </div>
+
         </section>
 
         <section id="sugestoes">
-            <h2>Sugerir Novo Livro</h2>
+
+            <p class="destaque">02 — PARTICIPE</p>
+            <h2>Indique uma leitura</h2>
+
+            <p>
+                Conhece alguma obra que merece fazer parte
+                do nosso arquivo? Envie sua sugestão.
+            </p>
 
             <form id="formulario" action="#" method="post">
 
-                <label for="nome">Nome do leitor:</label>
+                <label for="nome">Seu nome:</label>
                 <input type="text" id="nome" required>
 
                 <label for="titulo">Título do livro:</label>
                 <input type="text" id="titulo" required>
 
-                <button type="submit">Enviar Sugestão</button>
+                <button type="submit">Enviar indicação ↗</button>
 
                 <p id="mensagem"></p>
 
             </form>
+
         </section>
 
     </main>
 
     <footer>
-        <p>Biblioteca Virtual - Projeto Acadêmico</p>
+        <h2>AFTERDARK<span>.</span></h2>
+        <p>ARQUIVO LITERÁRIO — 2026</p>
+        <a href="#inicio">Voltar ao início ↑</a>
     </footer>
 
 </body>
